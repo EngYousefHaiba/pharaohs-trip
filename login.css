@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(imgs/login/ChatGPT\ Image\ 18\ أبريل\ 2025،\ 12_32_13\ م.png)
+    repeat center center fixed;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+} */
+.login_box {
+  width: 400px;
+  position: relative;
+  height: 450px;
+  /* background: rgba(0, 0, 0, 0.2); */
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255, 0.9);
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+h2 {
+  color: rgb(212, 175, 55);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.input_box {
+  position: relative;
+  width: 300px;
+  margin: 30px 0;
+  border-bottom: 2px solid rgb(212, 175, 55);
+}
+
+.input_box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: rgb(212, 175, 55);
+  pointer-events: none;
+  transition: 0.5s;
+  margin: 0 0 0 5px;
+}
+.input_box input:focus ~ label,
+.input_box input:valid ~ label {
+  top: -10px;
+}
+
+.input_box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgb(212, 175, 55);
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+}
+
+.input_box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: rgb(212, 175, 55);
+  line-height: 57px;
+}
+.remember-forgot {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: rgb(212, 175, 55);
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  margin: 3px;
+}
+
+.remember-forgot a {
+  color: rgb(212, 175, 55);
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: rgb(212, 175, 55);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: #000;
+  font-size: 1em;
+}
+
+.register {
+  margin: 25px 0 10px;
+  font-size: 0.9em;
+  color: rgb(212, 175, 55);
+  text-align: center;
+}
+.register p a {
+  color: rgb(212, 175, 55);
+  text-decoration: none;
+  font-weight: 600;
+}
+.register p a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.btn:hover {
+  background: rgb(241, 240, 233);
+  color: #000;
+  transition: 0.5s;
+}
+
+@media (max-width: 360px) {
+  .login_box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+  }
+}
